@@ -44,7 +44,7 @@ http://www.geeksforgeeks.org/
 http://www.lintcode.com/zh-cn/
 
 https://leetcode-cn.com/problemset/all/?topicSlugs=array
-https://www.ojcoder.cn/
+https://www.ojcoder.cn/   很牛逼的算法网站
 
 
 
@@ -62,8 +62,10 @@ https://www.ojcoder.cn/
 
 字符串算法：
 给定两个字符串，求长度最大的公共子串
-给定字符串求长度最大的不重复子串
+给定字符串求长度最大的不重复子串(寻找字符串不包含重复字符的最长子字符串)
 求字符串中所有字符的组合
+一个字符串是否是另一个字符串的子串
+
 
 图的算法：
 图上两点直接的最短距离(迪杰斯特拉)
@@ -78,7 +80,6 @@ https://www.ojcoder.cn/
 单链表算法：
 
 二叉树算法：
-
 
 
 
