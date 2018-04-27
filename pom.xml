@@ -6,21 +6,12 @@
 
     <groupId>com.abin.lee</groupId>
     <artifactId>algorithm-test1</artifactId>
+    <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <modules>
+        <module>algorithm-basic</module>
+        <module>algorithm-special</module>
+    </modules>
 
 
     <dependencies>
