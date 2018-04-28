@@ -11,7 +11,7 @@ import lombok.Setter;
  * https://www.cnblogs.com/zhengcj/p/7494089.html
  *
  */
-public class SingleChainReverse {
+public class SingleChainRing {
 
     public static void main(String[] args) {
         Node node1 = new Node(1);
@@ -27,14 +27,27 @@ public class SingleChainReverse {
         node4.next = node5 ;
         node5.next = node6 ;
         node6.next = node7 ;
+        node7.next = node2 ;
         System.out.println("node1 = " + JsonUtil.toJson(node1));
 
 //        Node middle = searchMiddle(node1) ;
 //        System.out.println("middle = " + JsonUtil.toJson(middle));
         Node reverseLoop = reverseLoop(node1) ;
         System.out.println("reverseLoop = " + JsonUtil.toJson(reverseLoop));
+
+
+
     }
 
+    public static Node searchMiddle(Node root){
+        Node slow = root ;
+        Node fast = root ;
+        while(fast != null && fast.next != null){
+            slow = slow.next ;
+            fast = fast.next.next ;
+        }
+        return slow;
+    }
 
     /**
      *  链表反转递归
