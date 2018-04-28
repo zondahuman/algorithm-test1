@@ -1,6 +1,6 @@
 package com.abin.lee.algorithm.basic.chain.reverse;
 
-import com.abin.lee.algorithm.test.util.JsonUtil;
+import com.abin.lee.algorithm.basic.util.JsonUtil;
 import lombok.Getter;
 import lombok.Setter;
 

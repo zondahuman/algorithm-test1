@@ -1,6 +1,6 @@
 package com.abin.lee.algorithm.basic.chain.search;
 
-import com.abin.lee.algorithm.test.util.JsonUtil;
+import com.abin.lee.algorithm.common.util.JsonUtil;
 import lombok.Getter;
 import lombok.Setter;
 

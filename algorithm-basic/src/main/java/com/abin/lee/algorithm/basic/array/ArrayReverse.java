@@ -1,6 +1,7 @@
 package com.abin.lee.algorithm.basic.array;
 
-import com.abin.lee.algorithm.test.util.JsonUtil;
+
+import com.abin.lee.algorithm.common.util.JsonUtil;
 
 /**
  * Created by abin on 2018/3/23 16:38.

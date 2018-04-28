@@ -1,4 +1,4 @@
-package com.abin.lee.algorithm.basic.util;
+package com.abin.lee.algorithm.common.util;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -16,7 +16,9 @@ import java.io.Writer;
 import java.text.SimpleDateFormat;
 
 /**
- * 
+ * Json序列化工具
+ * @author abin
+ * @date
  */
 public class JsonUtil {
 
