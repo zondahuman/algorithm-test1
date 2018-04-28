@@ -11,7 +11,7 @@ import lombok.Setter;
  * https://www.cnblogs.com/zhengcj/p/7494089.html
  * 链表是否相交
  */
-public class SingleChainCross {
+public class SingleChainIntersection {
 
     public static void main(String[] args) {
         Node node1 = new Node(1);
@@ -27,28 +27,35 @@ public class SingleChainCross {
         node4.next = node5 ;
         node5.next = node6 ;
         node6.next = node7 ;
-        node7.next = node2 ;
+
+        Node node11 = new Node(11);
+        Node node12 = new Node(12);
+        node11.next = node12 ;
+        node12.next = node3;
+
         System.out.println("node1 = " + JsonUtil.toJson(node1));
+        System.out.println("node11 = " + JsonUtil.toJson(node11));
 
-//        Node middle = searchMiddle(node1) ;
-//        System.out.println("middle = " + JsonUtil.toJson(middle));
-        Boolean reverseLoop = haveRing(node1) ;
-        System.out.println("reverseLoop = " + JsonUtil.toJson(reverseLoop));
-
-
-
+        Boolean listIntersection = listIntersection(node1, node11) ;
+        System.out.println("listIntersection = " + JsonUtil.toJson(listIntersection));
     }
 
-    public static Boolean haveRing(Node root){
-        Node slow = root ;
-        Node fast = root ;
-        while(fast != null && fast.next != null){
-            slow = slow.next ;
-            fast = fast.next.next ;
-            if(slow == fast)
-                return Boolean.TRUE;
+    public static Boolean listIntersection(Node param1, Node param2){
+        Node first = param1 ;
+        Node second = param2 ;
+        Node fEnd = null;
+        while(first.next != null){
+            first = first.next ;
         }
-        return Boolean.FALSE;
+        fEnd = first;
+        Node sEnd = null;
+        while(second.next != null){
+            second = second.next ;
+        }
+        sEnd = second;
+        if(fEnd == sEnd)
+            return true;
+        return false;
     }
 
 
