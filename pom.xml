@@ -12,6 +12,7 @@
         <module>algorithm-basic</module>
         <module>algorithm-special</module>
         <module>algorithm-common</module>
+        <module>algorithm-dplan</module>
     </modules>
 
 
