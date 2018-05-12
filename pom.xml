@@ -13,6 +13,7 @@
         <module>algorithm-special</module>
         <module>algorithm-common</module>
         <module>algorithm-dplan</module>
+        <module>algorithm-greedy</module>
     </modules>
 
 
