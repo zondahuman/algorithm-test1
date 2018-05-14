@@ -8,7 +8,15 @@ package com.abin.lee.algorithm.greedy.refuel;
 public class GasStationRefuel {
 
 
-    public static void refuel(){
+    public static int refuel(int[] refuelStation, int distance){
+        for(int i=0;i<refuelStation.length;i++){
+            if(refuelStation[i] > distance)
+                return -1;
+        }
+        for (int i = 0; i <refuelStation.length ; i++) {
+
+        }
+        return 0;
 
     }
 
