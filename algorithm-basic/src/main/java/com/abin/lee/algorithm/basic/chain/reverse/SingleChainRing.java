@@ -92,6 +92,11 @@ public class SingleChainRing {
         return size;
     }
 
+    /**
+     * 单链表环的入口单链表环的入口
+     * @param root
+     * @return
+     */
     public static Node entranceNode(Node root) {
         Node slow = root;
         Node fast = root;
