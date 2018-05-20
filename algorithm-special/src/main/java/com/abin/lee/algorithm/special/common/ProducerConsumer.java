@@ -10,8 +10,7 @@ import java.util.concurrent.BlockingQueue;
  */
 public class ProducerConsumer {
 
-    private static BlockingQueue<String> queue = new ArrayBlockingQueue<String>(10);
-    private static Object lock = new Object();
+    private static BlockingQueue<String> queue = new ArrayBlockingQueue<String>(3);
 
     public static class Producer extends Thread {
 
